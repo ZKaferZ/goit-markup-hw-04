@@ -117,6 +117,23 @@ body {
   color: var(--accent-color);
 }
 
+.envelope,
+.smartphone {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+}
+
 /* Лого */
 .logo {
   display: block;
