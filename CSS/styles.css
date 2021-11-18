@@ -117,13 +117,6 @@ body {
   color: var(--accent-color);
 }
 
-.envelope,
-.smartphone {
-  margin-right: 10px;
-
-  fill: currentColor;
-}
-
 .envelope {
   width: 16px;
   height: 12px;
@@ -132,6 +125,13 @@ body {
 .smartphone {
   width: 10px;
   height: 16px;
+}
+
+.envelope,
+.smartphone {
+  margin-right: 10px;
+
+  fill: currentColor;
 }
 
 /* Лого */
