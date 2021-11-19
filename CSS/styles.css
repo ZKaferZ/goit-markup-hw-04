@@ -10,6 +10,8 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --line-color: #ececec;
   --border-color: #eeeeee;
+   --social-unactive: #afb1b8;
+  --social-unactive-footer: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -247,6 +249,7 @@ body {
   background-color: var(--hero-btn-accent-color);
 }
 
+
 /* Заголовки */
 .heading {
   margin: 0 0 50px 0;
@@ -372,6 +375,60 @@ body {
   letter-spacing: 0.03em;
 }
 
+.social,
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--social-unactive);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--social-unactive);
+  border-radius: 4px;
+
+  color: var(--social-unactive);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients > .clients-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+
 /* Портфолио заголовки: услуги/примеры работ */
 .work-title {
   margin: 0 0 4px 0;
@@ -437,6 +494,10 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.social > .social-list:not(:last-child) {
+  margin-right: 10px;
 }
 
 .container > .link.logo {
