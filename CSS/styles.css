@@ -496,6 +496,12 @@ body {
   overflow: hidden;
 }
 
+.social-item:hover,
+.social-item:focus {
+  color: var(--current-white-color);
+  background-color: var(--accent-color);
+}
+
 .social > .social-list:not(:last-child) {
   margin-right: 10px;
 }
